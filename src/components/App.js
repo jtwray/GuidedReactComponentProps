@@ -19,6 +19,16 @@ export default function App() {
 
   // 5- Build a `changeStatus` function that takes an id and
   // changes the `married` from true to false and viceversa
+  const changeStatus = friendId => {
+    setFriends(friends.map(fr => {
+      // if the id of `fr` matches `friendId`, return BRAND NEW OBJECT with a flipped civil
+      // otherwise return the `fr`
+      if (fr.id === friendId) {
+        return { ...fr, married: !fr.married }
+      }
+      return fr
+    })) // setFriends, needs a NEW ARRAY OF FRIENDS
+  }
 
   // STRETCH - Make a helper function that returns
   // a filtered array of friends data (filtering by search term)
