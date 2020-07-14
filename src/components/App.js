@@ -41,7 +41,7 @@ export default function App() {
 
       {/* 7- Render the FriendsList component */}
       {/* What prop/props does FriendsList need? */}
-      <FriendsList foo={3} bar='gaga' />
+      <FriendsList friends={friends} />
     </div>
   )
 }

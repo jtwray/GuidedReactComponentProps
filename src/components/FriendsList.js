@@ -4,7 +4,7 @@ import Friend from './Friend'
 
 export default function FriendsList(props) {
   // 2- What data does FriendsList need to do its job? Use destructuring
-  const { foo, bar } = props
+  const { friends } = props
 
   return (
     <div className='list-friends container'>
